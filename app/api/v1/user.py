@@ -15,10 +15,10 @@ def get_me(user: User = Depends(get_current_user)):
 
     return {user}
 
-@router.get("/")
-def get_users(db: Session=Depends(get_db)):
-    #  get all users
-    return {'': ''}
+# @router.get("/")
+# def get_users(db: Session=Depends(get_db)):
+#     #  get all users
+#     return {'': ''}
 
 
 @router.put("/password")
